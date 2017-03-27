@@ -27,6 +27,7 @@ class BannerView: UIView {
     public var images = [Any]() {
         didSet {
             setupImageViews()
+            self.rollingEnable = true
         }
     }
     
@@ -93,12 +94,10 @@ class BannerView: UIView {
             guard imageCount > 1 else {
                 return
             }
-            if newValue != rollingEnable {
-                if newValue {
-                    startTimer()
-                } else {
-                    stopTimer()
-                }
+            if newValue {
+                startTimer()
+            } else {
+                stopTimer()
             }
         }
     }

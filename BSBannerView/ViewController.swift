@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         "http://imgsrc.baidu.com/forum/w=580/sign=d8ed32237b1ed21b79c92eed9d6fddae/2af6314e251f95ca8eb13167cf177f3e65095293.jpg",
         "http://b.hiphotos.baidu.com/zhidao/pic/item/e7cd7b899e510fb3bebd6de4df33c895d1430c18.jpg",
         "http://a.hiphotos.baidu.com/zhidao/pic/item/d0c8a786c9177f3ec7b6d24f71cf3bc79e3d56f5.jpg",
-        localImage
+        localImage!
     ]
     
     var autoScrollView: BannerView!
